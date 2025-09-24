@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formation</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-image: url('FrontPic/formation.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center 20%; /* Ajusté pour ne pas être trop haut */
+        }
+        h1 { color: #000; }
+        h2 { color: #333; margin-top: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        p { font-size: 16px; color: #000; text-align: justify; line-height: 1.6; margin-bottom: 15px; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .sidebar { 
+            width: 200px; 
+            float: left; 
+            padding: 10px; 
+            background-color: transparent; /* Sidebar transparente */
+            color: #fff; /* Texte blanc pour contraste avec l'image de fond */
+        }
+        .content { 
+            margin-left: 220px; 
+        }
+        ul.menu { list-style-type: none; padding: 0; } /* Pour la sidebar */
+        li.menu { margin: 10px 0; }
+        a { 
+            text-decoration: underline; /* Ajoute un soulignement */
+            color: #ffffff; /* Blanc pour les liens de la sidebar */
+            background-color: transparent; /* Fond transparent */
+            padding: 2px 5px; /* Légère marge pour lisibilité */
+        }
+        a:hover { color: #d4d4d4; } /* Gris clair au survol pour les liens de la sidebar */
+        .content a { 
+            color: #0000FF; /* Bleu pour les liens dans .content */
+        }
+        .content a:hover { 
+            color: #000080; /* Bleu foncé au survol pour les liens dans .content */
+        }
+        .section { 
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet 3D */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul class="menu">
+            <li class="menu"><a href="index.html">Accueil</a></li>
+            <li class="menu"><a href="formation.html">Formation</a></li>
+            <li class="menu"><a href="pea.html">Projet d'économétrie appliquée</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Formation</h1>
+        
+        <div class="section">
+            <h2>Master : Système d’Information Économique et Financier – Université de Montpellier</h2>
+            <p>Ce Master, intégré à la mention Monnaie, Banque, Finance et Assurance (MBFA), m’a permis de développer une expertise à la croisée de l’économie, de la finance et des technologies de l’information. J’y ai acquis des compétences solides en analyse et traitement de données (fouille de données, économétrie, machine learning), en particulier pour la prévision de séries temporelles et l’analyse de la performance financière des entreprises. <a href="https://formations.umontpellier.fr/fr/formations/master-XB/master-monnaie-banque-finance-assurance-IVS5EBZE/systeme-d-information-economique-et-financier-mention-mbfa-IVS5FPYQ.html" target="_blank">Découvrir le programme</a>.</p>
+            <ul>
+                <li>Analyse et traitement de données (fouille de données, économétrie, machine learning).</li>
+                <li>Prévision de séries temporelles.</li>
+                <li>Analyse de la performance financière des entreprises.</li>
+                <li>Maîtrise des langages et outils : Python, SQL, SAS, VBA.</li>
+                <li>Conception et modélisation de systèmes d’information.</li>
+                <li>Enjeux réglementaires et sécuritaires (droit informatique, RGPD).</li>
+                <li>Approches modernes : prompt engineering pour l’IA.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Licence d’Économie – Université de Montpellier</h2>
+            <p>Pendant cette formation de trois ans (bac + 3), j’ai acquis un socle solide en économie théorique et appliquée, tout en développant des compétences en gestion, droit et communication. Le cursus m’a permis de comprendre les mécanismes microéconomiques (comportement des agents, décisions individuelles) et macroéconomiques (croissance, cycles, politique économique). <a href="https://formations.umontpellier.fr/fr/formations/licence-XA/licence-d-economie-KIOD0F7Q/licence-d-economie-parcours-classique-KIOFNKWA.html" target="_blank">En savoir plus</a>.</p>
+            <ul>
+                <li>Connaissances en économie théorique et appliquée.</li>
+                <li>Management et compétences en communication.</li>
+                <li>Analyse microéconomique et macroéconomique.</li>
+                <li>Comptabilité générale et analytique.</li>
+                <li>Statistiques, probabilités et inférence statistique.</li>
+                <li>Droit des affaires.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Stage de Fin d’Études – Septeo</h2>
+            <p>Lors de mon stage de fin de Master chez Septeo, j’ai travaillé sur l’automatisation des calculs financiers pour le service Infrastructure, dans un environnement complexe comprenant clusters Kubernetes et machines virtuelles. Mon objectif était de rendre les coûts IT plus fiables, réguliers et transparents. Ce projet m’a permis de combiner compétences financières et techniques, renforçant la traçabilité des données et contribuant à la prise de décision budgétaire. <a href="https://www.septeo.com/fr/" target="_blank">Découvrir Septeo</a>.</p>
+            <ul>
+                <li>Automatisation des calculs financiers dans un environnement Kubernetes.</li>
+                <li>Traçabilité et suivi des investissements et amortissements.</li>
+                <li>Production d’indicateurs exploitables pour les équipes financières.</li>
+                <li>Application de règles claires pour la transparence des coûts IT.</li>
+            </ul>
+        </div>
+        
+        <p><a href="index.html">Retour</a></p>
+    </div>
+</body>
+</html>
