@@ -16,13 +16,21 @@
         }
         h1 { color: #000; }
         p { font-size: 16px; color: #000; text-align: justify; } /* Texte justifié */
-        .sidebar { 
+        .sidebar {
             width: 200px; 
-            float: left; 
+            height: 100vh; /* Prend toute la hauteur de l'écran */
+            position: fixed; /* Fixe la sidebar à gauche pour qu'elle reste visible en scrollant */
+            top: 0; /* Alignement en haut */
+            left: 0; /* Alignement à gauche */
             padding: 10px; 
-            background-color: transparent; /* Sidebar transparente */
-            color: #fff; /* Texte blanc pour contraste avec l'image de fond */
-            font-family: Arial, sans-serif; /* Police Arial uniquement pour la sidebar */
+            background-color: transparent; /* Conserve la transparence */
+            background-image: url('FrontPic/sidebar.png'); /* Chemin vers votre image PNG */
+            background-repeat: no-repeat; /* Évite la répétition */
+            background-size: cover; /* Couvre toute la sidebar (largeur et hauteur) */
+            background-position: center; /* Centre l'image */
+            color: #fff; /* Conserve la couleur du texte */
+            font-family: Arial, sans-serif; /* Conserve la police */
+            overflow-y: auto; /* Ajoute un défilement si le contenu dépasse la hauteur */
         }
         .content { 
             margin-left: 220px; 
@@ -43,11 +51,18 @@
         .content a:hover { 
             color: #000080; /* Bleu foncé au survol pour les liens dans .content */
         }
+        .section { 
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet 3D */
+        }
     </style>
 </head>
 <body>
     <div class="sidebar">
-        <ul>
+        <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="formation.html">Formation</a></li>
             <li><a href="pea.html">Projet d'économétrie appliquée</a></li>
@@ -58,26 +73,24 @@
         </ul>
     </div>
     <div class="content">
-        <h1>EL BOUFFI DRISS</h1>
-        <p>Data Analyst / Data Scientist / Programmeur, spécialisé dans le domaine de la finance. Jeune diplômé d'un Master Système d'Information Économique et Financier à l'Université de Montpellier, passionné par l'analyse de données, l'économétrie et l'informatique, j'ai développé des compétences en finance, statistiques et programmation. Ce site présente mon parcours académique, mes expériences professionnelles et mes projets significatifs.</p>
-        <div>
+        <div class="section">
+            <h1>EL BOUFFI DRISS</h1>
+            <p>Data Analyst / Data Scientist / Programmeur, spécialisé dans le domaine de la finance. Jeune diplômé d'un Master Système d'Information Économique et Financier à l'Université de Montpellier, passionné par l'analyse de données, l'économétrie et l'informatique, j'ai développé des compétences en finance, statistiques et programmation. Ce site présente mon parcours académique, mes expériences professionnelles et mes projets significatifs.</p>
+            <p><a href="../El_Bouffi/Docs/CV_EL_BOUFFI.pdf" target="_blank">Télécharger mon CV</a></p>
             <p><a href="contact.html">Me contacter</a></p>
         </div>
-        <div>
+        <div class="section">
             <h2>À Propos</h2>
             <p>Motivé avec une formation solide en économie et finance, renforcée par des compétences techniques en data et programmation. J'ai réalisé un stage chez Septeo où j'ai conçu et développé un système automatisé de suivi et d’analyse en temps réel des coûts d’infrastructure cloud, et un autre chez Queoval pour l'analyse des besoins clients avec traitement des données adapté. Mes projets incluent des analyses financières et des modélisations de bases de données.</p>
-            <p><a href="../El_Bouffi/Docs/CV_EL_BOUFFI.pdf" target="_blank">Télécharger mon CV</a></p>
         </div>
-        
-        <div>
+        <div class="section">
             <h2>Formation</h2>
             <p><a href="formation.html">Master : Système d'information économique et financier - Université de Montpellier</a></p>
             <p>Compétences approfondies en fouille et analyse de données, économétrie et prévisions de séries temporelles, avec maîtrise des langages VBA, SQL, SAS et Python. Expérience en Machine Learning appliqué à l’analyse économique et financière, ainsi qu’en conception et modélisation de systèmes d’information. Connaissances solides en droit informatique et sécurité des données (RGPD).</p>
             <p><a href="formation.html">Licence d'économie - Université de Montpellier</a></p>
             <p>Connaissances solides en économie et en management, avec compétences en communication, comptabilité générale et analytique, ainsi qu’en statistiques et probabilités appliquées aux inférences. Compréhension des principes du droit des affaires.</p>
         </div>
-        
-        <div>
+        <div class="section">
             <h2>Compétences</h2>
             <ul>
                 <li>Bases de données (SQL, NoSQL), Big Data (Apache Spark, Databricks).</li>
@@ -88,8 +101,7 @@
                 <li>Statistiques inférentielles, économétrie (ARIMA, GARCH, VAR), data visualisation (Power BI, SAS, Stata, EViews).</li>
             </ul>
         </div>
-        
-        <div>
+        <div class="section">
             <h2>Expériences Professionnelles</h2>
             <ul>
                 <li>Septeo – Lattes | Stage de fin d’études | Mars 2025 – Août 2025<br>Conception et développement d’un système automatisé de suivi et d’analyse en temps réel des coûts d’infrastructure cloud par application et par filiale, sur hébergement souverain (PHP, Kubernetes) :
@@ -107,8 +119,7 @@
                 </li>
             </ul>
         </div>
-        
-        <div>
+        <div class="section">
             <h2>Projets Significatifs</h2>
             <ul>
                 <li>Document : Cycle de vie de la Nintendo Switch (analyses et prévisions pour l’année fiscale 2024) (<a href="pea.html">Voir plus...</a>).</li>
@@ -120,16 +131,14 @@
                 <li>Valorisation de l'entreprise Nestlé.</li>
             </ul>
         </div>
-        
-        <div>
+        <div class="section">
             <h2>Langues</h2>
             <ul>
                 <li>Français</li>
-                <li>Anglais</li>
+                <li>Anglais - Niveau intermédiaire</li>
             </ul>
         </div>
-        
-        <div>
+        <div class="section">
             <h2>Autres Informations</h2>
             <ul>
                 <li>Permis B</li>
@@ -137,8 +146,6 @@
                 <li>Certification Voltaire</li>
             </ul>
         </div>
-        
-
     </div>
 </body>
 </html>
