@@ -37,7 +37,6 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            transition: transform 0.3s ease;
         }
         .content { 
             margin-left: 220px; 
@@ -107,50 +106,10 @@
             margin-bottom: 20px; 
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .hamburger {
-            display: none;
-            font-size: 24px;
-            color: #fff;
-            cursor: pointer;
-            padding: 10px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1000;
-        }
-        @media screen and (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: fixed;
-                top: 0;
-                left: 0;
-                transform: translateX(-100%);
-                z-index: 999;
-            }
-            .sidebar.active {
-                transform: translateX(0);
-            }
-            .hamburger {
-                display: block;
-            }
-            .content {
-                margin-left: 0;
-                max-width: 100%;
-            }
-            .sidebar ul {
-                margin-top: 50px;
-            }
-            .sidebar a {
-                width: 100%;
-                margin-left: 0;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="sidebar" id="sidebar">
-        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    <div class="sidebar">
         <ul>
             <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="formation.html">Formation</a></li>
@@ -236,11 +195,5 @@
             </ul>
         </div>
     </div>
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
