@@ -70,19 +70,28 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
         .sidebar a.no-bg {
-            background-color: transparent; /* Fond totalement transparent pour LinkedIn et GitHub */
-            text-decoration: none; /* Pas de soulignement par défaut */
+            background-color: transparent;
+            text-decoration: none;
         }
         .sidebar a.no-bg:hover {
-            background-color: transparent; /* Aucun fond au survol */
-            color: #ffffff; /* Conserve la couleur blanche */
-            text-decoration: underline; /* Soulignement uniquement au survol */
+            background-color: transparent;
+            color: #ffffff;
+            text-decoration: underline;
         }
         .sidebar a img {
             width: 24px;
             height: 24px;
             margin-right: 8px;
             vertical-align: middle;
+        }
+        .sidebar a.active {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: 500;
+        }
+        .sidebar a.active:hover {
+            background-color: #f0f0f0;
+            color: #000000;
         }
         .content a { 
             color: #0000FF;
@@ -102,7 +111,7 @@
 <body>
     <div class="sidebar">
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="formation.html">Formation</a></li>
             <li><a href="pea.html">Projet d'économétrie appliquée</a></li>
             <li><a href="marveldoc.html">Analyse Technique</a></li>
