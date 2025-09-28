@@ -5,54 +5,93 @@
     <title>EL BOUFFI Driss - Projet d'économétrie appliquée</title>
     <link rel="icon" type="image/png" href="FrontPic/index_favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Alata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body { 
-            font-family: "Alata", sans-serif; /* Nouvelle police pour le corps */
+            font-family: "Alata", sans-serif;
             margin: 20px; 
             background-image: url('FrontPic/pea.jpg'); 
             background-size: cover; 
             background-repeat: no-repeat; 
-            background-position: center 20%; /* Ajusté pour ne pas être trop haut */
+            background-position: center 20%;
         }
         h1 { color: #000000; }
-        p { font-size: 16px; color: #000; text-align: justify; } /* Texte justifié */
+        p { font-size: 16px; color: #000; text-align: justify; }
         .sidebar { 
             width: 200px; 
-            height: 100vh; /* Prend toute la hauteur de l'écran */
-            position: fixed; /* Fixe la sidebar à gauche pour qu'elle reste visible en scrollant */
-            top: 0; /* Alignement en haut */
-            left: 0; /* Alignement à gauche */
-            padding: 10px; 
-            background-color: transparent; /* Conserve la transparence */
-            background-image: url('FrontPic/sidebar.png'); /* Chemin vers votre image PNG */
-            background-repeat: no-repeat; /* Évite la répétition */
-            background-size: cover; /* Couvre toute la sidebar (largeur et hauteur) */
-            background-position: center; /* Centre l'image */
-            color: #fff; /* Conserve la couleur du texte */
-            font-family: Arial, sans-serif; /* Conserve la police */
-            overflow-y: auto; /* Ajoute un défilement si le contenu dépasse la hauteur */
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 10px;
+            background-color: transparent;
+            background-image: url('FrontPic/sidebar.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
         .content { 
             margin-left: 220px; 
-            max-width: 33%; /* Limite le contenu à un tiers de la largeur */
-            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour lisibilité */
+            max-width: 33%;
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px; 
             border-radius: 8px; 
         }
-        ul { list-style-type: none; padding: 0; }
-        li { margin: 10px 0; }
-        a { 
-            text-decoration: underline; /* Ajoute un soulignement */
-            color: #ffffff; /* Blanc pour les liens de la sidebar */
-            background-color: transparent; /* Fond transparent */
-            padding: 2px 5px; /* Légère marge pour lisibilité */
+        .sidebar ul { 
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0;
+            width: 100%;
         }
-        a:hover { color: #d4d4d4; } /* Gris clair au survol pour les liens de la sidebar */
+        .sidebar li { 
+            margin: 15px 0;
+            width: 100%;
+        }
+        .sidebar a { 
+            text-decoration: none;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            width: 160px;
+            margin-left: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .sidebar a:hover { 
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .sidebar a.no-bg {
+            background-color: transparent;
+            text-decoration: none;
+        }
+        .sidebar a.no-bg:hover {
+            background-color: transparent;
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .sidebar a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
         .content a { 
-            color: #0000FF; /* Bleu pour les liens dans .content (ex: lien de téléchargement) */
+            color: #0000FF;
         }
         .content a:hover { 
-            color: #000080; /* Bleu foncé au survol pour les liens dans .content */
+            color: #000080;
         }
     </style>
 </head>
@@ -64,8 +103,8 @@
             <li><a href="pea.html">Projet d'économétrie appliquée</a></li>
             <li><a href="marveldoc.html">Analyse Technique</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://www.linkedin.com/in/driss-el-bouffi-25a394316" target="_blank">Linkedin</a></li>
-            <li><a href="https://github.com/Tsushi12" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/driss-el-bouffi-25a394316" target="_blank" class="no-bg"><img src="FrontPic/linkedin.png" alt="LinkedIn Logo"> LinkedIn</a></li>
+            <li><a href="https://github.com/Tsushi12" target="_blank" class="no-bg"><img src="FrontPic/github.png" alt="GitHub Logo"> GitHub</a></li>
         </ul>
     </div>
     <div class="content">
